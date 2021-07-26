@@ -22,7 +22,7 @@
   "minimumCoreVersion": "0.7.6",
   "compatibleCoreVersion": "0.7.9",
   "url": "https://github.com/SlymZCore/TWTRPGFVTT",
-  "manifest": "https://raw.githubusercontent.com/SlymZCore/TWTRPGFVTT/master/src/system.json",
+  "manifest": "https://github.com/SlymZCore/TWTRPGFVTT/releases/latest/download/system.json",
   "download": "https://github.com/SlymZCore/TWTRPGFVTT/releases/download/0.1/TWTRPGFVTT-0.1.zip",
   "license": "LICENSE"
 }
