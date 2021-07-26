@@ -1,0 +1,234 @@
+{
+  "THEWITCHER" : {
+    "language": "English",
+    "version": "0.1.0",
+    "common": {
+      "kilos": "Kilos",
+      "kilos_abbr": "KG"
+    },
+
+    "actor": {
+      "age": "Age",
+      "race": "Race",
+      "gender": "Gender",
+      "profession": "Profession",
+      "profession_abbr": "Prof",
+      "origin": "Origin",
+      "armor": "Armor",
+
+      "abilities": {
+        "int": {
+          "label": "Intelligence",
+          "abbr": "INT"
+        },
+        "ref": {
+          "label": "Reflexes",
+          "abbr": "REF"
+        },
+        "dex": {
+          "label": "Dexterity",
+          "abbr": "DEX"
+        },
+        "body": {
+          "label": "Body",
+          "abbr": "BODY"
+        },
+        "spd": {
+          "label": "Speed",
+          "abbr": "SPD"
+        },
+        "emp": {
+          "label": "Empathy",
+          "abbr": "EMP"
+        },
+        "cra": {
+          "label": "Craft",
+          "abbr": "CRA"
+        },
+        "will": {
+          "label": "Will",
+          "abbr": "WILL"
+        },
+        "luck": {
+          "label": "Luck",
+          "abbr": "LUCK"
+        }
+      },
+
+      "attributes": {
+        "stun" : {
+          "label": "Stun",
+          "abbr": "STUN"
+        },
+        "run": {
+          "label": "Run",
+          "abbr": "RUN"
+        },
+        "leap": {
+          "label": "Leap",
+          "abbr": "LEAP"
+        },
+        "hp": {
+          "label": "Health Points",
+          "abbr": "HP"
+        },
+        "sta": {
+          "label": "Stamina",
+          "abbr": "STA"
+        },
+        "enc": {
+          "label": "Encumbrance",
+          "abbr": "ENC"
+        },
+        "rec": {
+          "label": "Recovery",
+          "abbr": "REC"
+        },
+        "resolve": {
+          "label": "resolve",
+          "abbr": "Resolve"
+        },
+        "vigor": {
+          "label": "Vigor",
+          "abbr": "Vigor"
+        }
+      },
+
+      "skills": {
+        "awareness": "Awareness",
+        "business": "Business",
+        "deduction": "Deduction",
+        "education": "Education",
+        "language": "Language (2)",
+        "monster_lore": "Monster Lore (2)",
+        "social_etiquette": "Social Etiquette",
+        "streetwise": "Streetwise",
+        "tactics": "Tactics (2)",
+        "teaching": "Teaching",
+        "wilderness_survival": "Wilderness Survival",
+        "brawling": "Brawling",
+        "dodge": "Dodge/Escape",
+        "melee": "Melee",
+        "riding": "Riding",
+        "sailing": "Sailing",
+        "small_blades": "Small Blades",
+        "staff_spear": "Staff/Spear",
+        "swordsmanship": "Swordsmanship",
+        "archery": "Archery",
+        "athletics": "Athletics",
+        "crossbow": "Crossbow",
+        "sleight_of_hand": "Sleight of Hand",
+        "stealth": "Stealth",
+        "physique": "Physique",
+        "endurance": "Endurance",
+        "charisma": "Charisma",
+        "deceit": "Deceit",
+        "fine_arts": "Fine Arts",
+        "gambling": "Gambling",
+        "grooming_and_style": "Grooming and Style",
+        "human_perception": "Human Perception",
+        "leadership": "Leadership",
+        "persuasion": "Persuasion",
+        "performance": "Performance",
+        "seduction": "Seduction",
+        "alchemy": "Alchemy (2)",
+        "crafting": "Crafting (2)",
+        "disguise": "Disguise",
+        "first_aid": "First Aid",
+        "forgery": "Forgery",
+        "pick_lock": "Pick Lock",
+        "trap_crafting": "Trap Crafting (2)",
+        "courage": "Courage",
+        "hex_weaving": "Hex Weaving (2)",
+        "intimidation": "Intimidation",
+        "spell_casting": "Spell Casting (2)",
+        "resist_magic": "Resist Magic (2)",
+        "resist_coercion": "Resist Coercion",
+        "ritual_crafting": "Ritual Crafting (2)"
+      },
+
+      "npc": {
+        "type": "Type",
+        "bounty": "Bounty",
+        "threat": "Threat"
+      }
+    },
+    "actor_sheet": {
+      "name": "Name",
+      "temp": "Temp",
+      "max_curr": "Maximum / Current",
+      "ability_points": "Total Points",
+      "wound_threshold": "Wound Threshold",
+      "bonus_melee_damage": "Bonus Melee DMG"
+    },
+
+    "item": {
+      "type": {
+        "service": "Service",
+        "general_gear": "General Gear",
+        "food_and_drink": "Food & Drink",
+        "container": "Container",
+        "alchemical_item": "Alchemical Item",
+        "tool_kit": "Tool Kit",
+        "rune": "Rune",
+        "glyph": "Glyph",
+        "mutagen": "Mutagen",
+        "potion": "Witcher Potion",
+        "blade_oil": "Blade Oil",
+        "decoction": "Witcher Decoction",
+        "spell": "Spell",
+        "ritual": "Ritual",
+        "hex": "Hex",
+        "component": "Component",
+        "substance": "Substance",
+        "diagram": "Diagram",
+        "formulae": "Formulae",
+        "weapon": "Weapon",
+        "armor": "Armor",
+        "armor_enhancement": "Armor Enhancement"
+      },
+      "capacity": "Capacity",
+      "availability": "Availability",
+      "availability_abbr": "Avail.",
+      "concealment": "Concealment",
+      "concealment_abbr": "Conc.",
+      "container_filters": "Container Filters",
+      "container_concealment": "Allowed Concealment",
+      "container_item_types": "Allowed Item Types"
+    },
+    "item_sheet": {
+      "name": "Item Name",
+      "cost": "Cost",
+      "weight": "Weight",
+      "quantity": "Quantity",
+      "charges": "Charges",
+      "usage": "Usage",
+      "item_detail": "Item Details",
+      "availability": {
+        "everywhere": "Everywhere (E)",
+        "common": "Common (C)",
+        "poor": "Poor (P)",
+        "rare": "Rare (R)"
+      },
+      "concealment": {
+        "tiny": "Tiny (T)",
+        "small": "Small (S)",
+        "large": "Large (L)",
+        "cant_hide": "Can't Hide (N/A)"
+      }
+    },
+
+    "rolls": {
+      "ability_prompt_title": "{ability} Ability Check",
+      "skill_prompt_title": "{skill} Skill Check",
+      "profession_skill_prompt_title": "{skill} Profession Skill Check"
+    },
+
+    "actions": {
+      "add": "Add",
+      "item_create": "Create item",
+      "item_edit": "Edit Item",
+      "item_delete": "Remove Item"
+    }
+  }
+}

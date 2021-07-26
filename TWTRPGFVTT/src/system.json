@@ -1,0 +1,28 @@
+{
+  "name": "thewitcher",
+  "title": "The Witcher RPG",
+  "description": "An unofficial system for The Witcher RPG by R. Talsorian Games",
+  "version": "0.1.0",
+  "author": "SlymZCore",
+  "scripts": [],
+  "esmodules": ["thewitcher.js"],
+  "styles": ["thewitcher.css"],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "templateVersion": 2,
+  "socket": true,
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "minimumCoreVersion": "0.7.6",
+  "compatibleCoreVersion": "0.7.9",
+  "url": "https://github.com/SlymZCore/TWTRPGFVTT",
+  "manifest": "https://raw.githubusercontent.com/SlymZCore/TWTRPGFVTT/master/src/system.json",
+  "download": "https://github.com/SlymZCore/TWTRPGFVTT/releases/download/0.1/TWTRPGFVTT-0.1.zip",
+  "license": "LICENSE"
+}

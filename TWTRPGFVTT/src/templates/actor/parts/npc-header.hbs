@@ -1,0 +1,83 @@
+<div class="abilities flexcol">
+    <span class="abilities-title">{{localize "THEWITCHER.actor_sheet.temp"}}</span>
+    {{#each data.abilities as |ability key|}}
+        <div class="ability flexrow flex-group-center flex-gap" data-ability="{{key}}">
+            <label for="actor-ability-{{key}}" title="{{localize ability.label}}" class="ability-name">
+                {{localize ability.abbr}}
+            </label>
+            <input name="data.abilities.{{key}}.value" type="number" value="{{ability.value}}"
+                   data-dtype="Number" min="0" max="13"
+                   id="actor-ability-{{key}}"/>
+            <input name="data.abilities.{{key}}.temp" type="number" value="{{ability.temp}}"
+                   data-dtype="Number" min="0" max="13"
+                   id="actor-ability-{{key}}-temp"/>
+        </div>
+    {{/each}}
+    <div class="ability flexrow flex-group-center flex-gap">
+        <label for="actor-ability-points">{{localize "THEWITCHER.actor_sheet.ability_points"}}</label>
+        <input name="data.abilities_points" type="number" value="{{data.abilities_points}}"
+               data-dtype="Number" disabled
+               id="actor-ability-points"/>
+    </div>
+</div>
+
+<div class="basic-details flexcol flex-between">
+    <img class="token" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" alt="{{actor.name}}"/>
+
+    {{!-- Name and Type --}}
+    <div class="flexrow flex-group-left">
+        <div class="form-group">
+            <label for="actor-name">{{localize "THEWITCHER.actor_sheet.name"}}</label>
+            <input name="name" type="text" value="{{actor.name}}"
+                   id="actor-name"/>
+        </div>
+    </div>
+
+    {{!-- Type and Bounty --}}
+    <div class="flexrow flex-group-left">
+        <div class="form-group flex2">
+            <label for="actor-type">{{localize "THEWITCHER.actor.npc.type"}}</label>
+            <input name="data.type" type="number" value="{{data.type}}"
+                   id="actor-type"/>
+        </div>
+        <div class="form-group">
+            <label for="actor-bounty">{{localize "THEWITCHER.actor.npc.bounty"}}</label>
+            <input name="data.bounty" type="number" value="{{data.bounty}}" data-dtype="Number"
+                   id="actor-bounty"/>
+        </div>
+    </div>
+
+    {{!-- Threat and Armor --}}
+    <div class="flexrow flex-group-left">
+        <div class="form-group flex2">
+            <label for="actor-threat">{{localize "THEWITCHER.actor.npc.threat"}}</label>
+            <input name="data.threat" type="text" value="{{data.threat}}"
+                   id="actor-threat"/>
+        </div>
+        <div class="form-group">
+            <label for="actor-armor">{{localize "THEWITCHER.actor.armor"}}</label>
+            <input name="data.armor" type="text" value="{{data.armor}}"
+                   id="actor-armor"/>
+        </div>
+    </div>
+</div>
+
+<div class="derived-abilities flexcol">
+    <span class="abilities-title">{{localize "THEWITCHER.actor_sheet.max_curr"}}</span>
+    {{#each data.attributes as |attribute key|}}
+        {{#unless attribute.disabled}}
+            <div class="ability flexrow flex-group-center flex-gap">
+                <label for="actor-attribute-{{key}}" title="{{localize attribute.label}}">{{localize
+                        attribute.abbr}}</label>
+                <input name="data.attributes.{{key}}.value" type="number" value="{{attribute.value}}"
+                       data-dtype="Number" min="0" {{#if attribute.not_editable}}disabled{{/if}}
+                       id="actor-attribute-{{key}}"/>
+                {{#if (isResource attribute)}}
+                    <input name="data.attributes.{{key}}.max" type="number" value="{{attribute.max}}"
+                           data-dtype="Number" disabled
+                           id="actor-attribute-{{key}}-max"/>
+                {{/if}}
+            </div>
+        {{/unless}}
+    {{/each}}
+</div>
